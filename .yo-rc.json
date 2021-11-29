@@ -1,0 +1,56 @@
+{
+  "generator-jhipster": {
+    "blueprints": [
+      {
+        "name": "generator-jhipster-nodejs",
+        "version": "2.0.0"
+      }
+    ],
+    "applicationType": "monolith",
+    "baseName": "PetStore",
+    "jhipsterVersion": "7.0.1",
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "testFrameworks": [],
+    "pages": [],
+    "creationTimestamp": 1637748913126,
+    "serverPort": "8081",
+    "packageName": "com.jhipster.node",
+    "databaseType": "sql",
+    "devDatabaseType": "sqlite",
+    "prodDatabaseType": "postgresql",
+    "authenticationType": "jwt",
+    "clientFramework": "react",
+    "withAdminUi": true,
+    "clientTheme": "none",
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "packageFolder": "com/jhipster/node",
+    "jwtSecretKey": "MTlkZjA5MDY5YjhkZWNiMmNjZDk2OWY3ZDE5ODQ2YTdjYzc2NzI0Y2Y0Y2E5MzgyZmI4NjYwYjZjODcxNTZhZjUyZjliNTcwZmRmYzI4MjllZWE3NzcyZWE5NjBjMDFiZTk2ZjM2N2E1MjQ5NjU2ODk1M2Q0YmRkYjczOTQzMDU=",
+    "serviceDiscoveryType": false,
+    "websocket": false,
+    "searchEngine": false,
+    "messageBroker": false,
+    "clientPackageManager": "npm",
+    "clientThemeVariant": "",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-nodejs",
+        "version": "2.0.0"
+      }
+    ],
+    "cacheProvider": "ehcache",
+    "buildTool": "maven",
+    "enableHibernateCache": true,
+    "reactive": false,
+    "languages": ["en", "fr"],
+    "entities": ["Category", "Tag", "Order", "Pet", "PhotoUrl"],
+    "lastLiquibaseTimestamp": 1637750382000
+  }
+}

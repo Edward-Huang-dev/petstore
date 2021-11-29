@@ -1,0 +1,63 @@
+entity Category {
+    id Integer
+    name String
+}
+
+entity Pet {
+    id Integer
+    name String
+    status Status
+}
+
+entity Tag {
+    id Integer
+    name String
+}
+
+entity PhotoUrl {
+    url String
+}
+
+entity Order {
+    id Integer
+    petId Integer
+    quantity Integer
+    shipDate String
+    status OrderStatus
+    complete Boolean
+}
+
+enum Status {
+	AVAILABLE,
+    PENDING,
+    SOLD
+}
+
+enum OrderStatus {
+	PLACED,
+    APPROVED,
+    DELIVERED
+}
+
+entity User {
+    id Integer
+    username String
+    firstName String
+    lastName String
+    email String
+    password String
+    phone String
+    userStatus Integer
+}
+
+relationship ManyToOne {
+	Pet{category} to Category{pets},
+}
+
+relationship ManyToMany {
+	Pet{tags} to Tag{pets},
+}
+
+relationship OneToMany {
+	Pet{photoUrls} to PhotoUrl{pets},
+}
